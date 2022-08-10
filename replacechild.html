@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>replace child</title>
+</head>
+<body>
+	<ul id="test">
+		<li>home</li>
+		<li>about</li>
+		<li>service</li>
+		<li>product</li>
+		<li>contect</li>
+	</ul>
+
+</body>
+
+<script>
+	var newele=document.createElement("li")
+	var newtext=document.createTextNode("our verity")
+
+	newele.appendChild(newtext)
+
+	var change = document.getElementById('test')
+
+	var oldele=change.children[3]
+	change.replaceChild(newele,oldele) 
+
+
+
+
+</script>
+</html>

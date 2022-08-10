@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>replace child button</title>
+</head>
+<body>
+	<ul id="demo">
+		<li>home</li>
+	    <li>about</li>
+	    <li>service</li>
+	    <li>contect</li>	
+		
+	</ul>
+	<button onclick="exam()">click here</button>
+
+</body>
+<script>
+	function exam()
+	{
+		var a=document.createElement("li")
+		var b=document.createTextNode("our facility")
+
+		a.appendChild(b)
+
+		var change=document.getElementById('demo')
+
+		var c=change.children[2]
+		change.replaceChild(a,c)
+	}
+</script>
+</html>
