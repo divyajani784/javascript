@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onblur</title>
+</head>
+<body>
+	Enter your name: <input type="text" name="" id="blur" onblur="abc()">
+	enter your surname:<input type="text" name="">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+
+
+</body>
+<script>
+function abc() {
+  var x = document.getElementById("blur");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</html>

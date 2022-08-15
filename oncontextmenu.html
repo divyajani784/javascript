@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div oncontextmenu="myFunction()" contextmenu="mymenu">
+<p>Right-click inside this box to see the context menu!
+
+</div>
+
+<p><strong>Note:</strong> The contextmenu <strong>attribute</strong> only works in Firefox!</p>
+
+<script>
+function myFunction() {
+  alert("You right-clicked inside the div!");
+}
+</script>
+
+</body>
+</html>
