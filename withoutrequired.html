@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form validation without required</title>
+</head>
+<body>
+	<form method="get" id="form">
+		name<input type="text" id="name" name=""><br><br>
+		password<input type="password" id="password" name=""><br>
+		<button type="submit">Submit</button>
+		
+	</form>
+
+</body>
+<script type="text/javascript">
+	const name = document.getElementById('name')
+	const password = document.getElementById('password')
+	const form = document.getElementById('form')
+
+	form.addEventListener('submit',(e)=>{
+
+		if(name.value === '' || name.value == null)
+        {
+			alert("Name is required")
+		}
+
+
+		if(password.value.length<6)
+		{
+			alert("Password is too samll")
+		}
+
+
+		if(password.value.length>8)
+		{
+			alert("Password is too long")
+		}
+
+
+		e.preventDefault()
+		
+	})
+</script>
+
+</html>
